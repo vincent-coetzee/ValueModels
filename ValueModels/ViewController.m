@@ -7,23 +7,52 @@
 //
 
 #import "ViewController.h"
+#import "VLMColorPicker.h"
+#import "UIColor+Extensions.h"
+#import "VLMAspectAdaptor.h"
+#import "UILabel+ValueModel.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+    {
+    IBOutlet __weak VLMColorPicker* _colorPicker;
+    IBOutlet __weak UILabel* _label;
+    }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+    {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    [self initColorPicker];
+    [self initLabel];
+    }
 
+- (void) initLabel
+    {
+    _label.textColorModel = [VLMAspectAdaptor on: _colorPicker.listModel forAspect: @"selection"];
+    }
 
-- (void)didReceiveMemoryWarning {
+- (void) initColorPicker
+    {
+    _colorPicker.listModel.list = [UIColor kellyColors];
+    }
+
+- (IBAction) onKellyColorsTapped: (id) sender
+    {
+    _colorPicker.listModel.list = [UIColor kellyColors];
+    }
+
+- (IBAction) onCrayonColorsTapped: (id) sender
+    {
+    _colorPicker.listModel.list = [UIColor crayonColors];
+    }
+
+- (void)didReceiveMemoryWarning
+    {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+    }
 
 
 @end

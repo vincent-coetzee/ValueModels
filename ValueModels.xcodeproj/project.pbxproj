@@ -13,6 +13,19 @@
 		BF1450541E38868500EA294A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1450521E38868500EA294A /* Main.storyboard */; };
 		BF1450561E38868500EA294A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1450551E38868500EA294A /* Assets.xcassets */; };
 		BF1450591E38868500EA294A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1450571E38868500EA294A /* LaunchScreen.storyboard */; };
+		BF1450631E38870800EA294A /* VLMDependentSet.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450621E38870800EA294A /* VLMDependentSet.m */; };
+		BF1450661E3889E600EA294A /* VLMAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450651E3889E600EA294A /* VLMAbstractModel.m */; };
+		BF14506C1E388CB800EA294A /* VLMValueHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14506B1E388CB800EA294A /* VLMValueHolder.m */; };
+		BF1450701E38945A00EA294A /* VLMDateStringValueAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14506F1E38945A00EA294A /* VLMDateStringValueAdaptor.m */; };
+		BF1450731E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450721E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m */; };
+		BF1450791E38A1C100EA294A /* UITextField+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450781E38A1C100EA294A /* UITextField+ValueModel.m */; };
+		BF14507C1E38A76700EA294A /* VLMSelectionInList.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14507B1E38A76700EA294A /* VLMSelectionInList.m */; };
+		BF1450801E38A98600EA294A /* VLMColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14507F1E38A98600EA294A /* VLMColorPicker.m */; };
+		BF1450831E38AA1800EA294A /* UITableView+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450821E38AA1800EA294A /* UITableView+ValueModel.m */; };
+		BF1450861E38AD6600EA294A /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450851E38AD6600EA294A /* UIColor+Extensions.m */; };
+		BF14508A1E38D32A00EA294A /* UILabel+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450891E38D32A00EA294A /* UILabel+ValueModel.m */; };
+		BF14508D1E38D45E00EA294A /* VLMAspectAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14508C1E38D45E00EA294A /* VLMAspectAdaptor.m */; };
+		BF1450901E38E37900EA294A /* NSObject+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,36 @@
 		BF1450551E38868500EA294A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF1450581E38868500EA294A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF14505A1E38868500EA294A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF1450611E38870800EA294A /* VLMDependentSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMDependentSet.h; sourceTree = "<group>"; };
+		BF1450621E38870800EA294A /* VLMDependentSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMDependentSet.m; sourceTree = "<group>"; };
+		BF1450641E3889E600EA294A /* VLMAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMAbstractModel.h; sourceTree = "<group>"; };
+		BF1450651E3889E600EA294A /* VLMAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMAbstractModel.m; sourceTree = "<group>"; };
+		BF1450671E388A0000EA294A /* VLMValueModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLMValueModels.h; sourceTree = "<group>"; };
+		BF1450681E388A4600EA294A /* VLMModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMModel.h; sourceTree = "<group>"; };
+		BF1450691E388A7600EA294A /* VLMDependent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMDependent.h; sourceTree = "<group>"; };
+		BF14506A1E388CB800EA294A /* VLMValueHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMValueHolder.h; sourceTree = "<group>"; };
+		BF14506B1E388CB800EA294A /* VLMValueHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMValueHolder.m; sourceTree = "<group>"; };
+		BF14506D1E38914600EA294A /* VLMValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMValueModel.h; sourceTree = "<group>"; };
+		BF14506E1E38945A00EA294A /* VLMDateStringValueAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMDateStringValueAdaptor.h; sourceTree = "<group>"; };
+		BF14506F1E38945A00EA294A /* VLMDateStringValueAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMDateStringValueAdaptor.m; sourceTree = "<group>"; };
+		BF1450711E389D1B00EA294A /* VLMKeyValueAspectAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMKeyValueAspectAdaptor.h; sourceTree = "<group>"; };
+		BF1450721E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMKeyValueAspectAdaptor.m; sourceTree = "<group>"; };
+		BF1450771E38A1C100EA294A /* UITextField+ValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ValueModel.h"; sourceTree = "<group>"; };
+		BF1450781E38A1C100EA294A /* UITextField+ValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ValueModel.m"; sourceTree = "<group>"; };
+		BF14507A1E38A76700EA294A /* VLMSelectionInList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMSelectionInList.h; sourceTree = "<group>"; };
+		BF14507B1E38A76700EA294A /* VLMSelectionInList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMSelectionInList.m; sourceTree = "<group>"; };
+		BF14507E1E38A98600EA294A /* VLMColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMColorPicker.h; sourceTree = "<group>"; };
+		BF14507F1E38A98600EA294A /* VLMColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMColorPicker.m; sourceTree = "<group>"; };
+		BF1450811E38AA1800EA294A /* UITableView+ValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ValueModel.h"; sourceTree = "<group>"; };
+		BF1450821E38AA1800EA294A /* UITableView+ValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ValueModel.m"; sourceTree = "<group>"; };
+		BF1450841E38AD6600EA294A /* UIColor+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
+		BF1450851E38AD6600EA294A /* UIColor+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		BF1450881E38D32A00EA294A /* UILabel+ValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ValueModel.h"; sourceTree = "<group>"; };
+		BF1450891E38D32A00EA294A /* UILabel+ValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ValueModel.m"; sourceTree = "<group>"; };
+		BF14508B1E38D45E00EA294A /* VLMAspectAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMAspectAdaptor.h; sourceTree = "<group>"; };
+		BF14508C1E38D45E00EA294A /* VLMAspectAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMAspectAdaptor.m; sourceTree = "<group>"; };
+		BF14508E1E38E37900EA294A /* NSObject+ValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ValueModel.h"; sourceTree = "<group>"; };
+		BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ValueModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +101,10 @@
 		BF1450481E38868500EA294A /* ValueModels */ = {
 			isa = PBXGroup;
 			children = (
+				BF1450871E38AD7100EA294A /* Extensions */,
+				BF14507D1E38A95400EA294A /* Custom Controls with Binding */,
+				BF1450741E38A12B00EA294A /* Value Model Binding */,
+				BF1450601E38868F00EA294A /* Value Models */,
 				BF14504C1E38868500EA294A /* AppDelegate.h */,
 				BF14504D1E38868500EA294A /* AppDelegate.m */,
 				BF14504F1E38868500EA294A /* ViewController.h */,
@@ -77,6 +124,64 @@
 				BF14504A1E38868500EA294A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF1450601E38868F00EA294A /* Value Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450641E3889E600EA294A /* VLMAbstractModel.h */,
+				BF1450651E3889E600EA294A /* VLMAbstractModel.m */,
+				BF14508B1E38D45E00EA294A /* VLMAspectAdaptor.h */,
+				BF14508C1E38D45E00EA294A /* VLMAspectAdaptor.m */,
+				BF14506E1E38945A00EA294A /* VLMDateStringValueAdaptor.h */,
+				BF14506F1E38945A00EA294A /* VLMDateStringValueAdaptor.m */,
+				BF1450691E388A7600EA294A /* VLMDependent.h */,
+				BF1450611E38870800EA294A /* VLMDependentSet.h */,
+				BF1450621E38870800EA294A /* VLMDependentSet.m */,
+				BF1450711E389D1B00EA294A /* VLMKeyValueAspectAdaptor.h */,
+				BF1450721E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m */,
+				BF1450681E388A4600EA294A /* VLMModel.h */,
+				BF14507A1E38A76700EA294A /* VLMSelectionInList.h */,
+				BF14507B1E38A76700EA294A /* VLMSelectionInList.m */,
+				BF14506A1E388CB800EA294A /* VLMValueHolder.h */,
+				BF14506B1E388CB800EA294A /* VLMValueHolder.m */,
+				BF14506D1E38914600EA294A /* VLMValueModel.h */,
+				BF1450671E388A0000EA294A /* VLMValueModels.h */,
+			);
+			name = "Value Models";
+			sourceTree = "<group>";
+		};
+		BF1450741E38A12B00EA294A /* Value Model Binding */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450881E38D32A00EA294A /* UILabel+ValueModel.h */,
+				BF1450891E38D32A00EA294A /* UILabel+ValueModel.m */,
+				BF1450811E38AA1800EA294A /* UITableView+ValueModel.h */,
+				BF1450821E38AA1800EA294A /* UITableView+ValueModel.m */,
+				BF1450771E38A1C100EA294A /* UITextField+ValueModel.h */,
+				BF1450781E38A1C100EA294A /* UITextField+ValueModel.m */,
+			);
+			name = "Value Model Binding";
+			sourceTree = "<group>";
+		};
+		BF14507D1E38A95400EA294A /* Custom Controls with Binding */ = {
+			isa = PBXGroup;
+			children = (
+				BF14507E1E38A98600EA294A /* VLMColorPicker.h */,
+				BF14507F1E38A98600EA294A /* VLMColorPicker.m */,
+			);
+			name = "Custom Controls with Binding";
+			sourceTree = "<group>";
+		};
+		BF1450871E38AD7100EA294A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450841E38AD6600EA294A /* UIColor+Extensions.h */,
+				BF1450851E38AD6600EA294A /* UIColor+Extensions.m */,
+				BF14508E1E38E37900EA294A /* NSObject+ValueModel.h */,
+				BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +257,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1450511E38868500EA294A /* ViewController.m in Sources */,
+				BF1450901E38E37900EA294A /* NSObject+ValueModel.m in Sources */,
+				BF1450791E38A1C100EA294A /* UITextField+ValueModel.m in Sources */,
+				BF14506C1E388CB800EA294A /* VLMValueHolder.m in Sources */,
+				BF14508A1E38D32A00EA294A /* UILabel+ValueModel.m in Sources */,
 				BF14504E1E38868500EA294A /* AppDelegate.m in Sources */,
+				BF1450661E3889E600EA294A /* VLMAbstractModel.m in Sources */,
+				BF1450701E38945A00EA294A /* VLMDateStringValueAdaptor.m in Sources */,
+				BF1450801E38A98600EA294A /* VLMColorPicker.m in Sources */,
+				BF14508D1E38D45E00EA294A /* VLMAspectAdaptor.m in Sources */,
+				BF1450731E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m in Sources */,
+				BF1450861E38AD6600EA294A /* UIColor+Extensions.m in Sources */,
+				BF14507C1E38A76700EA294A /* VLMSelectionInList.m in Sources */,
+				BF1450631E38870800EA294A /* VLMDependentSet.m in Sources */,
 				BF14504B1E38868500EA294A /* main.m in Sources */,
+				BF1450831E38AA1800EA294A /* UITableView+ValueModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macsemantics.ValueModels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -288,6 +407,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.macsemantics.ValueModels;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -310,6 +430,7 @@
 				BF14505F1E38868500EA294A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
