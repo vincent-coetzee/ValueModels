@@ -28,6 +28,7 @@
 		BF1450901E38E37900EA294A /* NSObject+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */; };
 		BF1450941E38E6C300EA294A /* VLMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450931E38E6C300EA294A /* VLMPerson.m */; };
 		BF1450981E38E78D00EA294A /* VLMPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450971E38E78D00EA294A /* VLMPersonCell.m */; };
+		BF14509E1E38F5A200EA294A /* NSDate+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14509D1E38F5A200EA294A /* NSDate+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,8 @@
 		BF1450931E38E6C300EA294A /* VLMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMPerson.m; sourceTree = "<group>"; };
 		BF1450961E38E78D00EA294A /* VLMPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMPersonCell.h; sourceTree = "<group>"; };
 		BF1450971E38E78D00EA294A /* VLMPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMPersonCell.m; sourceTree = "<group>"; };
+		BF14509C1E38F5A200EA294A /* NSDate+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extensions.h"; sourceTree = "<group>"; };
+		BF14509D1E38F5A200EA294A /* NSDate+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 		BF1450601E38868F00EA294A /* Value Models */ = {
 			isa = PBXGroup;
 			children = (
+				BF14508E1E38E37900EA294A /* NSObject+ValueModel.h */,
+				BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */,
 				BF1450641E3889E600EA294A /* VLMAbstractModel.h */,
 				BF1450651E3889E600EA294A /* VLMAbstractModel.m */,
 				BF14508B1E38D45E00EA294A /* VLMAspectAdaptor.h */,
@@ -181,8 +186,8 @@
 			children = (
 				BF1450841E38AD6600EA294A /* UIColor+Extensions.h */,
 				BF1450851E38AD6600EA294A /* UIColor+Extensions.m */,
-				BF14508E1E38E37900EA294A /* NSObject+ValueModel.h */,
-				BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */,
+				BF14509C1E38F5A200EA294A /* NSDate+Extensions.h */,
+				BF14509D1E38F5A200EA294A /* NSDate+Extensions.m */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 				BF1450901E38E37900EA294A /* NSObject+ValueModel.m in Sources */,
 				BF1450791E38A1C100EA294A /* UITextField+ValueModel.m in Sources */,
 				BF14506C1E388CB800EA294A /* VLMValueHolder.m in Sources */,
+				BF14509E1E38F5A200EA294A /* NSDate+Extensions.m in Sources */,
 				BF14508A1E38D32A00EA294A /* UILabel+ValueModel.m in Sources */,
 				BF14504E1E38868500EA294A /* AppDelegate.m in Sources */,
 				BF1450981E38E78D00EA294A /* VLMPersonCell.m in Sources */,

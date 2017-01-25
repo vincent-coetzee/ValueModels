@@ -38,5 +38,6 @@
 @property(readwrite,strong) NSDate* dateOfBirth;
 
 + (instancetype) personWithFirstName: (NSString*) first lastName: (NSString*) last dateOfBirth: (NSDate*) date;
++ (NSArray*) listOfPeople;
 
 @end

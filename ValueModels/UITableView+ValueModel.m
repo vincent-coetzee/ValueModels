@@ -41,6 +41,7 @@
     currentModel = (VLMSelectionInList*)objc_getAssociatedObject(self,@selector(listModel));
     [currentModel removeDependent: self];
     objc_setAssociatedObject(self,@selector(listModel),listModel,OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [listModel addDependent: self];
     self.delegate = listModel;
     self.dataSource = listModel;
     }

@@ -34,6 +34,8 @@
 #import "UIColor+Extensions.h"
 #import "VLMAspectAdaptor.h"
 #import "UILabel+ValueModel.h"
+#import "UITableView+ValueModel.h"
+#import "VLMPerson.h"
 
 @interface ViewController ()
 
@@ -43,6 +45,7 @@
     {
     IBOutlet __weak VLMColorPicker* _colorPicker;
     IBOutlet __weak UILabel* _label;
+    IBOutlet __weak UITableView* _table;
     }
 
 - (void)viewDidLoad
@@ -50,11 +53,17 @@
     [super viewDidLoad];
     [self initColorPicker];
     [self initLabel];
+    [self initTable];
     }
 
 - (void) initLabel
     {
     _label.textColorModel = [VLMAspectAdaptor on: _colorPicker.listModel forAspect: @"selection"];
+    }
+
+- (void) initTable
+    {
+    _table.listModel.list = [VLMPerson listOfPeople];
     }
 
 - (void) initColorPicker

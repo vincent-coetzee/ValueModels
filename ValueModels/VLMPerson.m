@@ -30,6 +30,7 @@
 //
 
 #import "VLMPerson.h"
+#import "NSDate+Extensions.h"
 
 @implementation VLMPerson
 
@@ -42,6 +43,24 @@
     person.lastName = last;
     person.dateOfBirth = date;
     return(person);
+    }
+
++ (NSArray*) listOfPeople
+    {
+    NSMutableArray* list;
+    
+    list = [NSMutableArray array];
+    [list addObject: [VLMPerson personWithFirstName: @"Peter" lastName: @"Pan" dateOfBirth: [NSDate distantPast]]];
+    [list addObject: [VLMPerson personWithFirstName: @"James" lastName: @"Bond" dateOfBirth: [NSDate day: 12 month: 12 year: 1942]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Isaac" lastName: @"Asimov" dateOfBirth: [NSDate day: 1 month: 11 year: 1935]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Peter" lastName: @"James" dateOfBirth: [NSDate day: 5 month: 7 year: 1980]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Alistair" lastName: @"Reynolds" dateOfBirth: [NSDate day: 7 month: 9 year: 1968]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Frederik" lastName: @"Pohl" dateOfBirth: [NSDate day: 9 month: 4 year: 1945]]];
+    [list addObject: [VLMPerson personWithFirstName: @"James" lastName: @"Kirk" dateOfBirth: [NSDate day: 4 month: 6 year: 2345]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Bones" lastName: @"McCoy" dateOfBirth: [NSDate day: 9 month: 3 year: 2325]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Montgomery" lastName: @"Scott" dateOfBirth: [NSDate day: 9 month: 1 year: 2322]]];
+    [list addObject: [VLMPerson personWithFirstName: @"Amanda" lastName: @"Grayson" dateOfBirth: [NSDate day: 7 month: 8 year: 2310]]];
+    return(list);
     }
 
 @end
