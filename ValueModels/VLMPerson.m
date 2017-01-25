@@ -1,5 +1,5 @@
 //
-//  VLMKeyValueAspectAdaptor.h
+//  VLMPerson.m
 //  ValueModels
 //
 //  Created by Vincent Coetzee on 2017/01/25.
@@ -29,15 +29,19 @@
 //  3. This notice may not be removed or altered from any source distribution.
 //
 
-#import "VLMAbstractModel.h"
-#import "VLMValueModel.h"
+#import "VLMPerson.h"
 
-@interface VLMKeyValueAspectAdaptor : VLMAbstractModel <VLMValueModeling,VLMDependence>
+@implementation VLMPerson
 
-@property(readwrite,retain) NSString* aspect;
-@property(readwrite,retain) id model;
-
-+ (instancetype) on: (id) model forAspect: (NSString*) aspect;
-- (instancetype) initWith: (id) model;
++ (instancetype) personWithFirstName: (NSString*) first lastName: (NSString*) last dateOfBirth: (NSDate*) date
+    {
+    VLMPerson* person;
+    
+    person = [self new];
+    person.firstName = first;
+    person.lastName = last;
+    person.dateOfBirth = date;
+    return(person);
+    }
 
 @end

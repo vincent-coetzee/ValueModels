@@ -26,6 +26,8 @@
 		BF14508A1E38D32A00EA294A /* UILabel+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450891E38D32A00EA294A /* UILabel+ValueModel.m */; };
 		BF14508D1E38D45E00EA294A /* VLMAspectAdaptor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14508C1E38D45E00EA294A /* VLMAspectAdaptor.m */; };
 		BF1450901E38E37900EA294A /* NSObject+ValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */; };
+		BF1450941E38E6C300EA294A /* VLMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450931E38E6C300EA294A /* VLMPerson.m */; };
+		BF1450981E38E78D00EA294A /* VLMPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1450971E38E78D00EA294A /* VLMPersonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,10 @@
 		BF14508C1E38D45E00EA294A /* VLMAspectAdaptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMAspectAdaptor.m; sourceTree = "<group>"; };
 		BF14508E1E38E37900EA294A /* NSObject+ValueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ValueModel.h"; sourceTree = "<group>"; };
 		BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ValueModel.m"; sourceTree = "<group>"; };
+		BF1450921E38E6C300EA294A /* VLMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMPerson.h; sourceTree = "<group>"; };
+		BF1450931E38E6C300EA294A /* VLMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMPerson.m; sourceTree = "<group>"; };
+		BF1450961E38E78D00EA294A /* VLMPersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLMPersonCell.h; sourceTree = "<group>"; };
+		BF1450971E38E78D00EA294A /* VLMPersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLMPersonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,19 +107,16 @@
 		BF1450481E38868500EA294A /* ValueModels */ = {
 			isa = PBXGroup;
 			children = (
-				BF1450871E38AD7100EA294A /* Extensions */,
+				BF1450991E38E7CC00EA294A /* Application */,
+				BF14509A1E38E7D700EA294A /* Controllers */,
 				BF14507D1E38A95400EA294A /* Custom Controls with Binding */,
+				BF1450951E38E77200EA294A /* Custom Views */,
+				BF1450871E38AD7100EA294A /* Extensions */,
+				BF1450911E38E69300EA294A /* Models */,
+				BF14509B1E38E7E700EA294A /* Resources */,
+				BF1450491E38868500EA294A /* Supporting Files */,
 				BF1450741E38A12B00EA294A /* Value Model Binding */,
 				BF1450601E38868F00EA294A /* Value Models */,
-				BF14504C1E38868500EA294A /* AppDelegate.h */,
-				BF14504D1E38868500EA294A /* AppDelegate.m */,
-				BF14504F1E38868500EA294A /* ViewController.h */,
-				BF1450501E38868500EA294A /* ViewController.m */,
-				BF1450521E38868500EA294A /* Main.storyboard */,
-				BF1450551E38868500EA294A /* Assets.xcassets */,
-				BF1450571E38868500EA294A /* LaunchScreen.storyboard */,
-				BF14505A1E38868500EA294A /* Info.plist */,
-				BF1450491E38868500EA294A /* Supporting Files */,
 			);
 			path = ValueModels;
 			sourceTree = "<group>";
@@ -182,6 +185,53 @@
 				BF14508F1E38E37900EA294A /* NSObject+ValueModel.m */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BF1450911E38E69300EA294A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450921E38E6C300EA294A /* VLMPerson.h */,
+				BF1450931E38E6C300EA294A /* VLMPerson.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BF1450951E38E77200EA294A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450961E38E78D00EA294A /* VLMPersonCell.h */,
+				BF1450971E38E78D00EA294A /* VLMPersonCell.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		BF1450991E38E7CC00EA294A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BF14504C1E38868500EA294A /* AppDelegate.h */,
+				BF14504D1E38868500EA294A /* AppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		BF14509A1E38E7D700EA294A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF14504F1E38868500EA294A /* ViewController.h */,
+				BF1450501E38868500EA294A /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BF14509B1E38E7E700EA294A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF1450521E38868500EA294A /* Main.storyboard */,
+				BF1450551E38868500EA294A /* Assets.xcassets */,
+				BF1450571E38868500EA294A /* LaunchScreen.storyboard */,
+				BF14505A1E38868500EA294A /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +312,10 @@
 				BF14506C1E388CB800EA294A /* VLMValueHolder.m in Sources */,
 				BF14508A1E38D32A00EA294A /* UILabel+ValueModel.m in Sources */,
 				BF14504E1E38868500EA294A /* AppDelegate.m in Sources */,
+				BF1450981E38E78D00EA294A /* VLMPersonCell.m in Sources */,
 				BF1450661E3889E600EA294A /* VLMAbstractModel.m in Sources */,
 				BF1450701E38945A00EA294A /* VLMDateStringValueAdaptor.m in Sources */,
+				BF1450941E38E6C300EA294A /* VLMPerson.m in Sources */,
 				BF1450801E38A98600EA294A /* VLMColorPicker.m in Sources */,
 				BF14508D1E38D45E00EA294A /* VLMAspectAdaptor.m in Sources */,
 				BF1450731E389D1B00EA294A /* VLMKeyValueAspectAdaptor.m in Sources */,

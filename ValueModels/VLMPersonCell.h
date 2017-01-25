@@ -1,5 +1,5 @@
 //
-//  VLMKeyValueAspectAdaptor.h
+//  VLMPersonCell.h
 //  ValueModels
 //
 //  Created by Vincent Coetzee on 2017/01/25.
@@ -29,15 +29,8 @@
 //  3. This notice may not be removed or altered from any source distribution.
 //
 
-#import "VLMAbstractModel.h"
-#import "VLMValueModel.h"
+#import <UIKit/UIKit.h>
 
-@interface VLMKeyValueAspectAdaptor : VLMAbstractModel <VLMValueModeling,VLMDependence>
-
-@property(readwrite,retain) NSString* aspect;
-@property(readwrite,retain) id model;
-
-+ (instancetype) on: (id) model forAspect: (NSString*) aspect;
-- (instancetype) initWith: (id) model;
+@interface VLMPersonCell : UITableViewCell
 
 @end
